@@ -1,3 +1,5 @@
+import SwiftUI
+import PlaygroundSupport
 
 struct Geo: ViewModifier {
     var block: (Bool)->()
@@ -29,10 +31,10 @@ extension View {
 }
 
 struct ContentView: View{
-    
     @State var isEntered1 = false
     @State var isEntered2 = false
     @State var isEntered3 = false
+    
     var body: some View{
         HStack{
             Rectangle()
