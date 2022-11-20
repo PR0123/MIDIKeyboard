@@ -1,8 +1,5 @@
 # onSlideOver
- Steps:
- - touchDown inside the leftmost rectangle
- - touchUp inside the rightmost rectangle
- - observe changes on entering frames of the middle rectangles
+Let’s imagine HStack full of views. You put down your finger on the leftmost view and lift it up on the rightmost one. What modifier to use for the views in-betweeen just to be notified when the finger is sliding over them? With mouse it would be onHover, but with finger is there anything?
 
 # IDEA: 
 https://stackoverflow.com/questions/4838609/detect-which-view-your-finger-is-sliding-over-in-android
