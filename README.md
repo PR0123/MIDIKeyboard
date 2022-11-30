@@ -6,7 +6,7 @@ In [this file](obfuscated.swift) I implemented the idea, but with terribly ugly 
 In [this file](firstAttempt.swift) I added modifier that fails when touch originated outside of it. Can a SwiftUI View react to touches outside of its frame?
 
 # Final goal
-To implement a MIDI keyboard View to use with SwiftUI, like below.
+To implement a MIDI keyboard View to use with SwiftUI, and use it to record MIDI files.
 
 MIDIKeyboard(fromMIDIKey: UInt8, toMIDIKey: UInt8) { midiEvent in 
   //handle Midi events, e.g. record.
@@ -19,4 +19,5 @@ MIDIKeyboard(range:)
   //handle Midi events, e.g. record.
 }
 
+Does this [tutorial](https://medium.com/@robdeans/recording-and-playing-audio-using-avfoundation-35064951d314) on how to record MIDI reflect the current state?
 
