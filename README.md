@@ -19,5 +19,5 @@ MIDIKeyboard(range:)
   //handle Midi events, e.g. record.
 }
 
-Does this [tutorial](https://medium.com/@robdeans/recording-and-playing-audio-using-avfoundation-35064951d314) on how to record MIDI reflect the current state?
+How to record live MIDI to a file the simplest way?
 
