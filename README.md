@@ -1,11 +1,10 @@
-# First step
-I am looking for an answer to [this question](https://developer.apple.com/forums/thread/720680) asked on a forum. Yet another [explanation](https://stackoverflow.com/questions/4838609/detect-which-view-your-finger-is-sliding-over-in-android), plus [an entertaining visualization](https://youtu.be/Sq2sa9aaOlA).
+The question is [how to handle incoming MIDI events in Core Midi](https://developer.apple.com/forums/thread/721191#721191021) or [with higher level framework as AVFoundation](https://developer.apple.com/forums/thread/721023)?
 
-In [this file](obfuscated.swift) I implemented the idea, but with terribly ugly code. In [this file](firstAttempt.swift) I added modifier that fails when touch originated outside of it. Can a SwiftUI View react to touches outside of its frame?
+To allow the keyboard view mimic glissando functionality, I need to answer [this question](https://developer.apple.com/forums/thread/720680). Here it is [paraphased](https://stackoverflow.com/questions/4838609/detect-which-view-your-finger-is-sliding-over-in-android), with the idea [visualized](https://youtu.be/Sq2sa9aaOlA).
 
-Final goal is to implement a MIDI keyboard View to use with SwiftUI to record MIDI files, so there is [the main question](https://developer.apple.com/forums/thread/721023). 
+In [this file](obfuscated.swift) I implemented the idea of the view, but with terribly ugly code. In [this file](firstAttempt.swift) I added modifier that fails when touch originated outside of it. Can a SwiftUI View react to touches outside of its frame?
 
-Knowing how to tap to midi events from external instrument, I could try to implement something as:
+With this knowledge I could try to implement something as:
 
 ```swift
 MIDIKeyboard(range:) { midiEvent in 
@@ -20,4 +19,3 @@ MIDIKeyboard(range:)
   //handle Midi events, e.g. record.
 }
 ```
-A hint on the simplest method of recording input from an external MIDI instrument to a file would also be helpful. Thank you.
